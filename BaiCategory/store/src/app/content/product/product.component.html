@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4" *ngFor="let prd of pro">
+            <div class="product-item mb-3 mt-2">
+                <div class="card">
+                    <img class="card-img-top card-imgs" src="{{prd.image}}" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">{{prd.name}}</h4>
+                        <p class="card-text">{{prd.price}}</p>
+                        <button type="button" class="btn btn-primary" routerLink="/detail/{{prd.id}}">Xem Thêm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="card text-white bg-warning p-1.5 mt-2">
+    <h4 class="p-2.2 text-center text-danger pt-2">Danh mục sản phẩm</h4>
+    <div class="card-body">
+        <div class="list-group" *ngFor="let cate of item ">
+            <a href="#" class="list-group-item list-group-item-action bg-warning"
+                routerLink="category/{{cate.id}}">{{cate.name}}</a>
+            <!-- <a href="#" class="list-group-item list-group-item-action bg-warning">QUần áo Nữ</a>
+            <a href="#" class="list-group-item list-group-item-action bg-warning ">Phụ kiện</a>
+            <a href="#" class="list-group-item list-group-item-action bg-warning ">Giày Dép</a> -->
+        </div>
+    </div>
+</div>
